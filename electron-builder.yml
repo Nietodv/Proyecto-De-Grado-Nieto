@@ -1,0 +1,18 @@
+appId: com.manuelitasaenz.admin
+productName: Manuelita Saenz
+directories:
+  output: dist
+files:
+  - out/**
+  - package.json
+asarUnpack:
+  - node_modules/better-sqlite3/**
+extraResources:
+  - from: drizzle
+    to: drizzle
+win:
+  target: nsis
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  shortcutName: Manuelita Sáenz
